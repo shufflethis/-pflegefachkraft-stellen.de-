@@ -104,4 +104,5 @@ const Datenschutz: React.FC = () => {
   );
 };
 
+export { Datenschutz };
 export default Datenschutz;

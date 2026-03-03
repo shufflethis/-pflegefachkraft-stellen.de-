@@ -113,4 +113,5 @@ const AutorSeite: React.FC = () => {
   );
 };
 
+export { AutorSeite };
 export default AutorSeite;

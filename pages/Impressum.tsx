@@ -86,4 +86,5 @@ const Impressum: React.FC = () => {
   );
 };
 
+export { Impressum };
 export default Impressum;

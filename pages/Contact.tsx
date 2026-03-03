@@ -427,4 +427,5 @@ const Contact: React.FC = () => {
   );
 };
 
+export { Contact };
 export default Contact;
