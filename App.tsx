@@ -8,6 +8,9 @@ import Candidates from './pages/Candidates';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { NavigationPaths } from './types';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
+import AutorSeite from './pages/AutorSeite';
 
 const App: React.FC = () => {
   return (
@@ -21,7 +24,11 @@ const App: React.FC = () => {
           <Route path={NavigationPaths.ABOUT} element={<About />} />
           <Route path={NavigationPaths.CONTACT} element={<Contact />} />
         </Route>
-      </Routes>
+                {/* // HR-UPDATER: v1.0 */}
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/autor/thomas-sander" element={<AutorSeite />} />
+          </Routes>
     </Router>
   );
 };

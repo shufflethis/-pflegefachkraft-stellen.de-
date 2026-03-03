@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# pflegefachkraft-stellen.de - Pflegefachkraft Stellenangebote
+
+> pflegefachkraft-stellen.de ist ein spezialisiertes Jobportal fuer Pflegefachkraft-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Pflegefachkraft
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://pflegefachkraft-stellen.de
+- Arbeitgeber-Kontakt: https://pflegefachkraft-stellen.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://pflegefachkraft-stellen.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Pflegefachkraft-Stellenangebote
+- Karriere-Ratgeber fuer Pflegefachkraft
+- Gehaltsvergleiche und Brancheninformationen
