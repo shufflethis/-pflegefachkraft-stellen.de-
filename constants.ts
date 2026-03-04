@@ -3,6 +3,127 @@ import { Job } from './types';
 export const MOCK_JOBS: Job[] = [
   {
     id: '1',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'DRK-Region Hannover e.V.',
+    location: 'Burgdorf, Kreis Hannover',
+    type: 'Vollzeit',
+    category: 'Pflegefachmann/-frau (Altenpflege)',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Pflegefachmann/-frau (Altenpflege)'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '2',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'AMEOS Klinikum Schönebeck GmbH',
+    location: 'Schönebeck (Elbe)',
+    type: 'Vollzeit',
+    category: 'Gesundheits- und Krankenpfleger/in',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Gesundheits- und Krankenpfleger/in'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '3',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Klinikum Dritter Orden',
+    location: 'München',
+    type: 'Vollzeit',
+    category: 'Krankenschwester/-pfleger',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Krankenschwester/-pfleger'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '4',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'St. Hubertus-Stift GmbH',
+    location: 'Neuss',
+    type: 'Vollzeit',
+    category: 'Altenpfleger/in',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Altenpfleger/in'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '5',
+    title: 'Pflegefachkraft',
+    employer: 'AWO Seniorenzentren Brandenburg gGmbH',
+    location: 'Werder (Havel)',
+    type: 'Vollzeit',
+    category: 'Altenpfleger/in',
+    description: 'Pflegefachkraft',
+    tags: ['Altenpfleger/in'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '6',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Diakonisches Werk Meißen gGmbH',
+    location: 'Weinböhla',
+    type: 'Vollzeit',
+    category: 'Pflegefachmann/-frau (Ausbildung)',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Pflegefachmann/-frau (Ausbildung)'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '7',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Alloheim Senioren-Residenzen SE',
+    location: 'Hamburg',
+    type: 'Vollzeit',
+    category: 'Pflegefachmann/-frau (Altenpflege)',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Pflegefachmann/-frau (Altenpflege)'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '8',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Impuls Personal GmbH Filiale Köln',
+    location: 'Köln',
+    type: 'Vollzeit',
+    category: 'Pflegefachmann/-frau (Altenpflege)',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Pflegefachmann/-frau (Altenpflege)'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '9',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'AGAPLESION Wohnen und Pflegen Süd Betriebs gemeinnützige GmbH',
+    location: 'Rüdesheim am Rhein',
+    type: 'Vollzeit',
+    category: 'Pflegefachmann/-frau (Ausbildung)',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Pflegefachmann/-frau (Ausbildung)'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '10',
+    title: 'Pflegefachkraft (w/m/d)',
+    employer: 'DRK gemeinnützige Krankenhausgesellschaft mbH Saarland',
+    location: 'Lebach',
+    type: 'Vollzeit',
+    category: 'Gesundheits- und Krankenpfleger/in',
+    description: 'Pflegefachkraft (w/m/d)',
+    tags: ['Gesundheits- und Krankenpfleger/in'],
+    datePosted: '2026-03-04'
+  },
+  {
+    id: '11',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'DOREAFAMILIE',
+    location: 'Bremen',
+    type: 'Vollzeit',
+    category: 'Krankenschwester/-pfleger',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Krankenschwester/-pfleger'],
+    datePosted: '2026-03-03'
+  },
+  {
+    id: '12',
     title: 'Pflegefachkraft',
     employer: 'AH Friedrichheim gGmbH',
     location: 'Hitzacker (Elbe)',
@@ -13,7 +134,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '2',
+    id: '13',
     title: 'Pflegefachkraft (w/m/d)',
     employer: 'conQuaesso® JOBS',
     location: 'Lebach',
@@ -24,7 +145,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '3',
+    id: '14',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'WIRMED GmbH Niederlassung Köln Süd',
     location: 'Bergisch Gladbach',
@@ -35,7 +156,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '4',
+    id: '15',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'WIRMED GmbH Niederlassung Dortmund',
     location: 'Hamm, Eifel',
@@ -46,7 +167,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '5',
+    id: '16',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'WIRMED GmbH Niederlassung Bonn',
     location: 'Bonn',
@@ -57,7 +178,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '6',
+    id: '17',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'WIRMED GmbH Niederlassung Köln Süd',
     location: 'Overath, Bergisches Land',
@@ -68,7 +189,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '7',
+    id: '18',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'WIRMED GmbH Niederlassung Köln Süd',
     location: 'Köln',
@@ -79,7 +200,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '8',
+    id: '19',
     title: 'Pflegefachkraft',
     employer: 'AWO Soziale Dienste Bezirk Hannover gGmbH Wohnen & Pflegen',
     location: 'Marklohe',
@@ -90,7 +211,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '9',
+    id: '20',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'Caritasverband der Erzdiözese München und Freising e.V.',
     location: 'Erding',
@@ -101,7 +222,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '10',
+    id: '21',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'Rehazentrum im Naturpark Aukrug',
     location: 'Aukrug',
@@ -112,7 +233,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '11',
+    id: '22',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'Schön Klinik SE',
     location: 'Vogtareuth',
@@ -123,7 +244,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '12',
+    id: '23',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'DOREAFAMILIE',
     location: 'Oldenburg (Oldb)',
@@ -134,7 +255,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '13',
+    id: '24',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'DOREAFAMILIE',
     location: 'Gevelsberg',
@@ -145,7 +266,7 @@ export const MOCK_JOBS: Job[] = [
     datePosted: '2026-03-03'
   },
   {
-    id: '14',
+    id: '25',
     title: 'Pflegefachkraft (m/w/d)',
     employer: 'JOVITA Rheinland gGmbH',
     location: 'Köln',
@@ -154,127 +275,6 @@ export const MOCK_JOBS: Job[] = [
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Krankenschwester/-pfleger'],
     datePosted: '2026-03-03'
-  },
-  {
-    id: '15',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'JOVITA Rheinland gGmbH',
-    location: 'Leverkusen',
-    type: 'Vollzeit',
-    category: 'Krankenschwester/-pfleger',
-    description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '16',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'Westlausitz Pflegeheim & Kurzzeitpflege gGmbH',
-    location: 'Ohorn',
-    type: 'Vollzeit',
-    category: 'Krankenschwester/-pfleger',
-    description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '17',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'Oberlausitz Pflegeheim & Kurzzeitpflege gGmbH',
-    location: 'Bischofswerda',
-    type: 'Vollzeit',
-    category: 'Krankenschwester/-pfleger',
-    description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '18',
-    title: 'Pflegefachkraft',
-    employer: 'AWO Bezirksverband Oberbayern e.V.',
-    location: 'Kirchseeon',
-    type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '19',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'München Klinik gGmbH',
-    location: 'München',
-    type: 'Vollzeit',
-    category: 'Krankenschwester/-pfleger',
-    description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '20',
-    title: 'Pflegefachkraft',
-    employer: 'AWO Bezirksverband Westliches Westfalen e.V.',
-    location: 'Bocholt',
-    type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '21',
-    title: 'Pflegefachkraft',
-    employer: 'AWO Kreisverband Mittelfranken-Süd e.V.',
-    location: 'Roßtal',
-    type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '22',
-    title: 'Pflegefachkraft',
-    employer: 'AWO Bezirksverband Westliches Westfalen e.V.',
-    location: 'Dortmund',
-    type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '23',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'Caritasverband Gießen e.V.',
-    location: 'Bad Vilbel',
-    type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-03'
-  },
-  {
-    id: '24',
-    title: 'Pflegefachkraft (w/m/d)',
-    employer: 'Frank Günther Jobaktivisten',
-    location: 'Nürnberg, Mittelfranken',
-    type: 'Vollzeit',
-    category: 'Altenpflegehelfer/in',
-    description: 'Pflegefachkraft (w/m/d)',
-    tags: ['Altenpflegehelfer/in'],
-    datePosted: '2026-03-02'
-  },
-  {
-    id: '25',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'DRK-Region Hannover e.V.',
-    location: 'Springe, Deister',
-    type: 'Vollzeit',
-    category: 'Pflegefachmann/-frau (Altenpflege)',
-    description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Pflegefachmann/-frau (Altenpflege)'],
-    datePosted: '2026-03-02'
   }
 ];
 
