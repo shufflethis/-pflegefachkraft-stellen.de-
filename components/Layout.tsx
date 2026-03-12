@@ -168,8 +168,8 @@ const Layout: React.FC = () => {
             <div className="lg:col-span-2">
               <h4 className="text-white font-serif font-bold text-lg mb-6">Rechtliches</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="hover:text-mint-300 transition-colors inline-block">Impressum</a></li>
-                <li><a href="#" className="hover:text-mint-300 transition-colors inline-block">Datenschutz</a></li>
+                <li><NavLink to="/impressum" className="hover:text-mint-300 transition-colors inline-block">Impressum</NavLink></li>
+                <li><NavLink to="/datenschutz" className="hover:text-mint-300 transition-colors inline-block">Datenschutz</NavLink></li>
                 <li><a href="#" className="hover:text-mint-300 transition-colors inline-block">AGB</a></li>
               </ul>
             </div>

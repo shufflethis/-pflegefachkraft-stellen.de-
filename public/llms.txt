@@ -1,19 +1,40 @@
 # HR-UPDATER: v1.0
 # pflegefachkraft-stellen.de - Pflegefachkraft Stellenangebote
 
-> pflegefachkraft-stellen.de ist ein spezialisiertes Jobportal fuer Pflegefachkraft-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> pflegefachkraft-stellen.de ist ein spezialisiertes Jobportal fuer Pflegefachkraft-Stellenangebote in Deutschland, Oesterreich und der Schweiz. Betrieben von der Social Media Venture GmbH.
 
 ## Ueber uns
 - Spezialisiertes Jobportal fuer Pflegefachkraft
 - Kostenlose Stellensuche fuer Bewerber
 - Gezielte Reichweite fuer Arbeitgeber
+- Taeglich aktualisierte Stellenangebote aus ganz Deutschland
+
+## Betreiber
+- Firma: Social Media Venture GmbH
+- Geschaeftsfuehrer: Thomas Sander
+- Adresse: Schliemannstrasse 23, 10437 Berlin
+- Website: https://pflegefachkraft-stellen.de
+- LinkedIn: https://de.linkedin.com/in/thomas-sander-520676303
 
 ## Kontakt
 - Website: https://pflegefachkraft-stellen.de
-- Arbeitgeber-Kontakt: https://pflegefachkraft-stellen.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://pflegefachkraft-stellen.de/kontakt-bewerber
+- Arbeitgeber-Kontakt: https://pflegefachkraft-stellen.de/#/kontakt
+- Bewerber-Kontakt: https://pflegefachkraft-stellen.de/#/bewerber
 
 ## Inhalte
 - Aktuelle Pflegefachkraft-Stellenangebote
-- Karriere-Ratgeber fuer Pflegefachkraft
+- Karriere-Ratgeber fuer Pflegefachkraefte
 - Gehaltsvergleiche und Brancheninformationen
+- FAQ rund um den Beruf Pflegefachkraft
+- Regionale Jobsuche in allen deutschen Grossstaedten
+
+## Seiten
+- Startseite: https://pflegefachkraft-stellen.de/
+- Stellenangebote: https://pflegefachkraft-stellen.de/#/stellenangebote
+- Fuer Arbeitgeber: https://pflegefachkraft-stellen.de/#/arbeitgeber
+- Fuer Bewerber: https://pflegefachkraft-stellen.de/#/bewerber
+- Ueber uns: https://pflegefachkraft-stellen.de/#/ueber-uns
+- Kontakt: https://pflegefachkraft-stellen.de/#/kontakt
+- Impressum: https://pflegefachkraft-stellen.de/#/impressum
+- Datenschutz: https://pflegefachkraft-stellen.de/#/datenschutz
+- Autor: https://pflegefachkraft-stellen.de/#/autor/thomas-sander

@@ -1,17 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, Heart, ShieldCheck, Users, ArrowRight, Sparkles } from 'lucide-react';
+import { Search, Heart, ShieldCheck, Users, ArrowRight, Sparkles, MapPin, Briefcase, Calendar, ChevronDown } from 'lucide-react';
 import Button from '../components/Button';
 import { NavigationPaths } from '../types';
-import { IMAGES } from '../constants';
+import { IMAGES, MOCK_JOBS } from '../constants';
+
+const GERMAN_CITIES = [
+  'Berlin', 'Hamburg', 'München', 'Köln', 'Frankfurt am Main', 'Stuttgart', 'Düsseldorf', 'Leipzig',
+  'Dortmund', 'Essen', 'Bremen', 'Dresden', 'Hannover', 'Nürnberg', 'Duisburg', 'Bochum',
+  'Wuppertal', 'Bielefeld', 'Bonn', 'Münster', 'Mannheim', 'Karlsruhe', 'Augsburg', 'Wiesbaden',
+  'Mönchengladbach', 'Gelsenkirchen', 'Aachen', 'Braunschweig', 'Kiel', 'Chemnitz',
+  'Halle (Saale)', 'Magdeburg', 'Freiburg', 'Krefeld', 'Mainz', 'Lübeck', 'Erfurt',
+  'Oberhausen', 'Rostock', 'Kassel', 'Hagen', 'Potsdam', 'Saarbrücken', 'Hamm',
+  'Ludwigshafen', 'Oldenburg', 'Osnabrück', 'Leverkusen', 'Heidelberg', 'Darmstadt',
+  'Regensburg', 'Würzburg', 'Wolfsburg', 'Ingolstadt', 'Ulm', 'Heilbronn', 'Göttingen',
+  'Reutlingen', 'Koblenz', 'Jena', 'Trier', 'Cottbus', 'Schwerin', 'Gera'
+];
+
+const FAQ_DATA = [
+  {
+    q: 'Was ist eine Pflegefachkraft?',
+    a: 'Eine Pflegefachkraft ist eine ausgebildete Fachperson in der Gesundheits- und Krankenpflege oder Altenpflege. Seit 2020 werden die bisherigen Ausbildungsberufe Altenpfleger/in, Gesundheits- und Krankenpfleger/in sowie Gesundheits- und Kinderkrankenpfleger/in in der generalistischen Pflegeausbildung zusammengefasst.'
+  },
+  {
+    q: 'Welche Voraussetzungen brauche ich als Pflegefachkraft?',
+    a: 'Fuer die Ausbildung zur Pflegefachkraft benoetigen Sie mindestens einen mittleren Schulabschluss oder einen Hauptschulabschluss mit abgeschlossener Berufsausbildung. Die Ausbildung dauert drei Jahre und schliesst mit einer staatlichen Pruefung ab.'
+  },
+  {
+    q: 'Wie viel verdient eine Pflegefachkraft in Deutschland?',
+    a: 'Das durchschnittliche Bruttogehalt einer Pflegefachkraft liegt in Deutschland zwischen 3.200 und 4.200 Euro monatlich, je nach Bundesland, Berufserfahrung und Arbeitgeber. In Ballungsraeumen und bei Tarifbindung sind hoehere Gehaelter ueblich.'
+  },
+  {
+    q: 'Ist die Stellensuche auf pflegefachkraft-stellen.de kostenlos?',
+    a: 'Ja, die Nutzung von pflegefachkraft-stellen.de ist fuer Bewerberinnen und Bewerber vollstaendig kostenlos. Sie koennen alle Stellenangebote durchsuchen und sich direkt bewerben, ohne Gebuehren oder versteckte Kosten.'
+  },
+  {
+    q: 'Welche Weiterbildungsmoeglichkeiten gibt es fuer Pflegefachkraefte?',
+    a: 'Pflegefachkraefte koennen sich in zahlreichen Bereichen weiterbilden, z.B. zur Praxisanleitung, Wundmanagement, Palliativpflege, Intensivpflege oder Pflegedienstleitung (PDL). Auch ein Studium in Pflegewissenschaft oder Pflegemanagement ist moeglich.'
+  },
+  {
+    q: 'In welchen Staedten gibt es die meisten Pflegefachkraft-Stellen?',
+    a: 'Die meisten offenen Stellen fuer Pflegefachkraefte finden sich in Grossstaedten wie Berlin, Hamburg, Muenchen, Koeln, Frankfurt am Main, Stuttgart, Duesseldorf und Leipzig. Aber auch in laendlichen Regionen besteht ein hoher Bedarf an qualifiziertem Pflegepersonal.'
+  }
+];
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const recentJobs = MOCK_JOBS.slice(0, 6);
 
   return (
     <div className="w-full overflow-hidden">
       {/* Hero Section - Split Layout */}
-      <section className="relative min-h-[90vh] flex items-center bg-warm-50 pt-10 md:pt-0">
+      <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center bg-warm-50 pt-10 md:pt-0">
         <div className="absolute top-0 right-0 w-2/3 h-full bg-mint-50/50 rounded-bl-[10rem] z-0 hidden lg:block"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -23,7 +65,7 @@ const Home: React.FC = () => {
                 <span>Die moderne Plattform für Pflegeberufe</span>
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-serif font-bold text-deep-900 leading-[1.1] tracking-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-serif font-bold text-deep-900 leading-[1.1] tracking-tight">
                 Arbeiten, wo <br/>
                 <span className="text-mint-600 italic relative inline-block">
                   Menschlichkeit
@@ -182,6 +224,133 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Aktuelle Stellenangebote - Prominent on Mobile */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-mint-600 font-medium tracking-wider uppercase text-sm">Aktuelle Jobs</span>
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-deep-900 mt-3 mb-4">Neueste Pflegefachkraft-Stellenangebote</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">Entdecken Sie aktuelle Stellenangebote fuer Pflegefachkraefte in ganz Deutschland. Taeglich neue Jobs von Top-Arbeitgebern.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {recentJobs.map((job) => (
+              <div key={job.id} className="bg-warm-50 border border-warm-100 rounded-2xl p-5 md:p-6 hover:shadow-lg hover:border-mint-200 transition-all duration-300 cursor-pointer group" onClick={() => navigate(NavigationPaths.JOBS)}>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="bg-mint-50 text-mint-700 text-xs px-2.5 py-1 rounded-full font-bold uppercase">{job.type}</span>
+                  <span className="text-slate-400 text-xs flex items-center">
+                    <Calendar size={11} className="mr-1" /> {job.datePosted}
+                  </span>
+                </div>
+                <h3 className="text-lg font-serif font-bold text-deep-900 mb-2 group-hover:text-mint-600 transition-colors">{job.title}</h3>
+                <div className="flex flex-col gap-1 text-sm text-slate-500">
+                  <span className="flex items-center"><Briefcase size={14} className="mr-2 text-mint-500" />{job.employer}</span>
+                  <span className="flex items-center"><MapPin size={14} className="mr-2 text-mint-500" />{job.location}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Button size="lg" onClick={() => navigate(NavigationPaths.JOBS)} className="h-14 px-10 text-lg">
+              Alle Stellenangebote ansehen <ArrowRight size={18} className="ml-2" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Geo SEO - Pflegefachkraft Jobs in deutschen Staedten */}
+      <section className="py-16 md:py-24 bg-warm-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-mint-600 font-medium tracking-wider uppercase text-sm">Regional</span>
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-deep-900 mt-3 mb-4">Pflegefachkraft-Jobs nach Stadt</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">Finden Sie Pflegefachkraft-Stellenangebote in Ihrer Naehe. Wir bieten Jobs in allen grossen deutschen Staedten.</p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+            {GERMAN_CITIES.map((city) => (
+              <a
+                key={city}
+                href={`#/stellenangebote?q=${encodeURIComponent(city)}`}
+                className="inline-block bg-white border border-warm-200 text-slate-700 text-sm px-4 py-2 rounded-full hover:bg-mint-50 hover:border-mint-300 hover:text-mint-700 transition-all duration-200 font-medium"
+              >
+                Pflegefachkraft Jobs {city}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Karriere-Ratgeber fuer Pflegefachkraefte */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-mint-600 font-medium tracking-wider uppercase text-sm">Karriere-Ratgeber</span>
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-deep-900 mt-3 mb-4">Karriere als Pflegefachkraft</h2>
+            <div className="w-24 h-1 bg-mint-500 mx-auto rounded-full"></div>
+          </div>
+
+          <div className="prose prose-lg prose-slate mx-auto leading-loose">
+            <h3 className="text-xl md:text-2xl font-serif font-bold text-deep-900 mt-8 mb-4">Der Beruf der Pflegefachkraft</h3>
+            <p>
+              Die Pflegefachkraft ist einer der wichtigsten Berufe im deutschen Gesundheitswesen. Mit der Einfuehrung der generalistischen Pflegeausbildung im Jahr 2020 wurden die bisherigen Berufsbilder Altenpfleger/in, Gesundheits- und Krankenpfleger/in sowie Gesundheits- und Kinderkrankenpfleger/in zu einem einheitlichen Berufsbild zusammengefuehrt. Pflegefachkraefte arbeiten in Krankenhaeusern, Pflegeheimen, ambulanten Pflegediensten, Rehabilitationseinrichtungen und vielen weiteren Bereichen des Gesundheitswesens.
+            </p>
+
+            <h3 className="text-xl md:text-2xl font-serif font-bold text-deep-900 mt-8 mb-4">Ausbildung und Qualifikation</h3>
+            <p>
+              Die Ausbildung zur Pflegefachkraft dauert drei Jahre und umfasst theoretischen Unterricht sowie praktische Einsaetze in verschiedenen Pflegebereichen. Voraussetzung ist mindestens ein mittlerer Schulabschluss. Nach erfolgreichem Abschluss der staatlichen Pruefung duerfen Pflegefachkraefte in allen Bereichen der Pflege taetig werden. Die generalistische Ausbildung wird EU-weit anerkannt und eroeffnet damit auch internationale Karrieremoeglichkeiten.
+            </p>
+
+            <h3 className="text-xl md:text-2xl font-serif font-bold text-deep-900 mt-8 mb-4">Gehalt und Verdienstmoeglichkeiten</h3>
+            <p>
+              Das Einstiegsgehalt einer Pflegefachkraft liegt in Deutschland bei etwa 2.900 bis 3.400 Euro brutto monatlich. Mit steigender Berufserfahrung, Weiterbildungen und Spezialisierungen kann das Gehalt auf 3.800 bis 4.500 Euro und mehr ansteigen. Pflegefachkraefte in leitenden Positionen oder mit Fachweiterbildungen (z.B. Intensivpflege, Aneasthesie) verdienen haeufig deutlich mehr. Zulagen fuer Nacht-, Wochenend- und Feiertagsdienste verbessern das Einkommen zusaetzlich.
+            </p>
+
+            <h3 className="text-xl md:text-2xl font-serif font-bold text-deep-900 mt-8 mb-4">Arbeitsmarkt und Zukunftsaussichten</h3>
+            <p>
+              Der Fachkraeftemangel in der Pflege ist eine der groessten Herausforderungen des deutschen Gesundheitssystems. Laut Bundesagentur fuer Arbeit fehlen in Deutschland zehntausende Pflegefachkraefte. Durch den demografischen Wandel und die alternde Gesellschaft wird der Bedarf in den kommenden Jahren weiter steigen. Fuer qualifizierte Pflegefachkraefte bedeutet das ausgezeichnete Jobaussichten, attraktive Arbeitgeberwahl und zunehmend bessere Arbeitsbedingungen.
+            </p>
+
+            <h3 className="text-xl md:text-2xl font-serif font-bold text-deep-900 mt-8 mb-4">Weiterbildung und Spezialisierung</h3>
+            <p>
+              Pflegefachkraefte haben vielfaeltige Moeglichkeiten zur beruflichen Weiterentwicklung: Fachweiterbildungen in Intensivpflege, Palliativpflege, Onkologie oder Wundmanagement sind ebenso moeglich wie Qualifikationen zur Praxisanleitung oder Pflegedienstleitung. Akademische Laufbahnen im Bereich Pflegewissenschaft, Pflegemanagement oder Pflegepaedagogik bieten weitere Karriereperspektiven. Auf pflegefachkraft-stellen.de finden Sie Stellenangebote fuer alle Qualifikationsstufen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-warm-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-mint-600 font-medium tracking-wider uppercase text-sm">FAQ</span>
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-deep-900 mt-3 mb-4">Haeufig gestellte Fragen</h2>
+            <p className="text-slate-600">Antworten auf die wichtigsten Fragen rund um den Beruf der Pflegefachkraft und unsere Plattform.</p>
+          </div>
+
+          <div className="space-y-3">
+            {FAQ_DATA.map((faq, idx) => (
+              <div key={idx} className="bg-white rounded-2xl border border-warm-100 overflow-hidden">
+                <button
+                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 hover:bg-warm-50 transition-colors"
+                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                  aria-expanded={openFaq === idx}
+                >
+                  <h3 className="font-serif font-bold text-deep-900 text-base md:text-lg">{faq.q}</h3>
+                  <ChevronDown size={20} className={`text-slate-400 flex-shrink-0 transition-transform duration-200 ${openFaq === idx ? 'rotate-180' : ''}`} />
+                </button>
+                {openFaq === idx && (
+                  <div className="px-6 pb-5 text-slate-600 leading-relaxed">
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Banner */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto bg-deep-900 rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden">
@@ -189,11 +358,11 @@ const Home: React.FC = () => {
              <div className="absolute w-96 h-96 bg-mint-500 rounded-full blur-[100px] -top-20 -left-20"></div>
              <div className="absolute w-96 h-96 bg-warm-500 rounded-full blur-[100px] bottom-0 right-0"></div>
           </div>
-          
+
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-8">Bereit für den nächsten Schritt?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-8">Bereit fuer den naechsten Schritt?</h2>
             <p className="text-warm-200 text-xl mb-10 leading-relaxed">
-              Finden Sie den Job, der Sie glücklich macht. Tausende offene Stellen warten auf Ihre Expertise und Ihr Herz.
+              Finden Sie den Job, der Sie gluecklich macht. Tausende offene Stellen warten auf Ihre Expertise und Ihr Herz.
             </p>
             <Button size="lg" className="bg-white text-deep-900 hover:bg-mint-50 border-none shadow-2xl hover:shadow-white/20 transform hover:-translate-y-1 transition-all" onClick={() => navigate(NavigationPaths.JOBS)}>
               Jetzt Stellenangebote ansehen
