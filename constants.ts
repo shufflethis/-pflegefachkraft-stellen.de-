@@ -3,278 +3,278 @@ import { Job } from './types';
 export const MOCK_JOBS: Job[] = [
   {
     id: '1',
-    title: 'Versand- & Lagermitarbeiter (m/w/d) als Shipping & Receiving Clerk',
-    employer: 'Elevate Aircraft Seating GmbH',
-    location: 'Kaiserslautern',
+    title: 'Elektrotechniker EMSR-Technik (w/m/d)',
+    employer: 'Infraserv GmbH & Co. Höchst KG',
+    location: 'Frankfurt am Main',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    description: 'Versand- & Lagermitarbeiter (m/w/d) als Shipping & Receiving Clerk',
+    description: 'Elektrotechniker EMSR-Technik (w/m/d)',
     tags: [],
-    datePosted: '2026-03-22'
+    datePosted: '2026-03-29'
   },
   {
     id: '2',
-    title: 'Mitarbeiter Kundenservice Online Banking (m/w/d)',
-    employer: 'Serviscope AG',
-    location: 'Köln',
+    title: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
+    employer: 'Berufsgenossenschaft Rohstoffe und chemische Industrie (BG RCI)',
+    location: 'Langenhagen',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    description: 'Mitarbeiter Kundenservice Online Banking (m/w/d)',
+    description: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
     tags: [],
-    datePosted: '2026-03-22'
+    datePosted: '2026-03-29'
   },
   {
     id: '3',
-    title: 'Mitarbeiter Kundenservice Online Banking (m/w/d)',
-    employer: 'Serviscope AG',
-    location: 'Troisdorf',
+    title: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
+    employer: 'Berufsgenossenschaft Rohstoffe und chemische Industrie (BG RCI)',
+    location: 'Bochum',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    description: 'Mitarbeiter Kundenservice Online Banking (m/w/d)',
+    description: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
     tags: [],
-    datePosted: '2026-03-22'
+    datePosted: '2026-03-29'
   },
   {
     id: '4',
-    title: 'Elektrotechnikerin / Elektrotechniker / Meisterin / Meister (m/w/d) als Projektmitarbeiter Eisenbahn-Signaltechnik',
-    employer: 'Scheidt & Bachmann Signalling Systems GmbH',
-    location: 'Düsseldorf',
+    title: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
+    employer: 'Berufsgenossenschaft Rohstoffe und chemische Industrie (BG RCI)',
+    location: 'Ober-Olm',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    description: 'Elektrotechnikerin / Elektrotechniker / Meisterin / Meister (m/w/d) als Projektmitarbeiter Eisenbahn-Signaltechnik',
+    description: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
     tags: [],
-    datePosted: '2026-03-22'
+    datePosted: '2026-03-29'
   },
   {
     id: '5',
-    title: 'Elektrotechnikerin / Elektrotechniker / Meisterin / Meister (m/w/d) als Projektmitarbeiter Eisenbahn-Signaltechnik',
-    employer: 'Scheidt & Bachmann Signalling Systems GmbH',
-    location: 'Mönchengladbach',
+    title: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
+    employer: 'Berufsgenossenschaft Rohstoffe und chemische Industrie (BG RCI)',
+    location: 'Heidelberg',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    description: 'Elektrotechnikerin / Elektrotechniker / Meisterin / Meister (m/w/d) als Projektmitarbeiter Eisenbahn-Signaltechnik',
+    description: 'Referent (m/w/d) befristet als Elternzeitvertretung für zwei Jahre',
     tags: [],
-    datePosted: '2026-03-22'
+    datePosted: '2026-03-29'
   },
   {
     id: '6',
-    title: 'Service & Gästebetreuung (m/w/d) - mind. 30-40 Stunden/Woche',
-    employer: 'bay one GmbHSofort-Bewerbung',
-    location: 'Sinsheim',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'SLOMO GmbH',
+    location: 'Zwickau',
     type: 'Vollzeit',
-    category: 'Sonstiges',
-    description: 'Service & Gästebetreuung (m/w/d) - mind. 30-40 Stunden/Woche',
-    tags: [],
-    datePosted: '2026-03-22'
+    category: 'Altenpflegehelfer/in',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Altenpflegehelfer/in'],
+    datePosted: '2026-03-28'
   },
   {
     id: '7',
-    title: 'Pflegefachkraft (w/m/d)',
-    employer: 'AGAPLESION Bethanien Diakonie gGmbH',
-    location: 'Berlin',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Diakonie Libera',
+    location: 'Hoyerswerda',
     type: 'Vollzeit',
     category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft (w/m/d)',
+    description: 'Pflegefachkraft (m/w/d)',
     tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-21'
+    datePosted: '2026-03-28'
   },
   {
     id: '8',
     title: 'Pflegefachkraft',
-    employer: 'AWO Kreisverband Essen e.V.',
-    location: 'Essen, Ruhr',
+    employer: 'AZURIT Seniorenzentrum Weimarblick',
+    location: 'Weimar, Thüringen',
     type: 'Vollzeit',
     category: 'Altenpfleger/in',
     description: 'Pflegefachkraft',
     tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-21'
+    datePosted: '2026-03-27'
   },
   {
     id: '9',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'DRK-Region Hannover e.V.',
-    location: 'Pattensen bei Hannover',
+    employer: 'Lichtenberger BetreuungsDienste gGmbH',
+    location: 'Berlin',
     type: 'Vollzeit',
-    category: 'Pflegefachmann/-frau (Altenpflege)',
+    category: 'Fachkinderkrankenpfleger/in - Hygiene',
     description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Pflegefachmann/-frau (Altenpflege)'],
-    datePosted: '2026-03-20'
+    tags: ['Fachkinderkrankenpfleger/in - Hygiene'],
+    datePosted: '2026-03-27'
   },
   {
     id: '10',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'DIEPA GmbH Filiale Berlin Südost',
-    location: 'Reichenwalde',
+    employer: 'Hahne Holding',
+    location: 'Hannover',
     type: 'Vollzeit',
     category: 'Krankenschwester/-pfleger',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-20'
+    datePosted: '2026-03-27'
   },
   {
     id: '11',
-    title: 'Pflegefachkraft',
-    employer: 'AWO Sozial gGmbH',
-    location: 'Kornwestheim',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Schön Klinik SE',
+    location: 'Düsseldorf',
     type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-20'
+    category: 'Krankenschwester/-pfleger',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Krankenschwester/-pfleger'],
+    datePosted: '2026-03-27'
   },
   {
     id: '12',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'MÜNCHENSTIFT GmbH',
-    location: 'München',
+    employer: 'Pflegedienst am Treptower Park GmbH',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    category: 'Krankenschwester/-pfleger',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Krankenschwester/-pfleger'],
+    datePosted: '2026-03-27'
+  },
+  {
+    id: '13',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Johanniter-Unfall-Hilfe e.V.',
+    location: 'Cuxhaven',
+    type: 'Vollzeit',
+    category: 'Krankenschwester/-pfleger',
+    description: 'Pflegefachkraft (m/w/d)',
+    tags: ['Krankenschwester/-pfleger'],
+    datePosted: '2026-03-27'
+  },
+  {
+    id: '14',
+    title: 'Pflegefachkraft (m/w/d)',
+    employer: 'Universitätsmedizin der Johannes Gutenberg-Universität Mainz',
+    location: 'Mainz am Rhein',
     type: 'Vollzeit',
     category: 'Altenpfleger/in',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-20'
-  },
-  {
-    id: '13',
-    title: 'Pflegefachkraft',
-    employer: 'AWO Pflege Schleswig-Holstein gGmbH',
-    location: 'Kiel',
-    type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-20'
-  },
-  {
-    id: '14',
-    title: 'Pflegefachkraft',
-    employer: 'AWOcura gGmbH',
-    location: 'Duisburg',
-    type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-20'
+    datePosted: '2026-03-27'
   },
   {
     id: '15',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'St. Vinzenz-Krankenhaus Hanau gGmbH',
-    location: 'Hanau',
+    employer: 'Schön Klinik SE',
+    location: 'Eckernförde',
     type: 'Vollzeit',
     category: 'Krankenschwester/-pfleger',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-20'
+    datePosted: '2026-03-27'
   },
   {
     id: '16',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'RGZ Holzminden GmbH',
-    location: 'Holzminden',
+    employer: 'Schön Klinik SE',
+    location: 'Neustadt in Holstein',
     type: 'Vollzeit',
     category: 'Krankenschwester/-pfleger',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-20'
+    datePosted: '2026-03-27'
   },
   {
     id: '17',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'AWO Kreisverband Mittelfranken-Süd e. V.',
-    location: 'Schwabach',
+    employer: 'Schön Klinik SE',
+    location: 'Bad Staffelstein',
     type: 'Vollzeit',
     category: 'Krankenschwester/-pfleger',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-20'
+    datePosted: '2026-03-27'
   },
   {
     id: '18',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'Korian Holding GmbH',
-    location: 'Glienicke/Nordbahn',
+    employer: 'Randstad Deutschland',
+    location: 'Schwerin, Mecklenburg',
     type: 'Vollzeit',
-    category: 'Krankenschwester/-pfleger',
+    category: 'Altenpfleger/in',
     description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Krankenschwester/-pfleger'],
-    datePosted: '2026-03-20'
+    tags: ['Altenpfleger/in'],
+    datePosted: '2026-03-27'
   },
   {
     id: '19',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'PERSO PLANKONTOR Nord GmbH',
-    location: 'Wildeshausen',
+    title: 'Pflegefachkraft m/w/d',
+    employer: 'St. Vinzenz gGmbH Fulda',
+    location: 'Fulda',
     type: 'Vollzeit',
     category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft (m/w/d)',
+    description: 'Pflegefachkraft m/w/d',
     tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-20'
+    datePosted: '2026-03-27'
   },
   {
     id: '20',
-    title: 'Pflegefachkraft (m/w/d)',
-    employer: 'Malteser Wohnen und Pflegen gGmbH Zentrale Malteser Wohnen und Pflegen',
-    location: 'Leipzig',
+    title: 'Pflegefachkraft',
+    employer: 'Alten- und Pflegeheim Zum Pfarrberg Eppendorf GmbH',
+    location: 'Eppendorf, Sachsen',
     type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-19'
+    category: 'Pflegefachmann/-frau (Altenpflege)',
+    description: 'Pflegefachkraft',
+    tags: ['Pflegefachmann/-frau (Altenpflege)'],
+    datePosted: '2026-03-27'
   },
   {
     id: '21',
-    title: 'Pflegefachkraft (m/w/d) für',
-    employer: 'CV Gladbeck e. V. Management D ienstleistungen',
-    location: 'Gladbeck',
+    title: 'Pflegefachkraft m/w/d',
+    employer: 'Christopherus-Haus e.V.',
+    location: 'Bochum',
     type: 'Vollzeit',
-    category: 'Altenpfleger/in',
-    description: 'Pflegefachkraft (m/w/d) für',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-19'
+    category: 'Gesundheits- und Krankenpfleger/in',
+    description: 'Pflegefachkraft m/w/d',
+    tags: ['Gesundheits- und Krankenpfleger/in'],
+    datePosted: '2026-03-27'
   },
   {
     id: '22',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'Alloheim Senioren-Residenzen SE',
-    location: 'Munster, Örtze',
+    employer: 'Caritas-Sozialstation Neumarkt e.V.',
+    location: 'Neukirchen bei Sulzbach-Rosenberg',
     type: 'Vollzeit',
-    category: 'Altenpfleger/in',
+    category: 'Pflegefachmann/-frau (Altenpflege)',
     description: 'Pflegefachkraft (m/w/d)',
-    tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-19'
+    tags: ['Pflegefachmann/-frau (Altenpflege)'],
+    datePosted: '2026-03-27'
   },
   {
     id: '23',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'workconcept service GmbH Arbeitnehmerüberlassung',
-    location: 'Erfurt',
+    employer: 'BRK-AH Hammergmünd Personalabteilung',
+    location: 'Grafenwöhr',
     type: 'Vollzeit',
     category: 'Altenpfleger/in',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-19'
+    datePosted: '2026-03-25'
   },
   {
     id: '24',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'workconcept service GmbH Arbeitnehmerüberlassung',
-    location: 'Artern/Unstrut',
+    employer: 'Seniorenzentrum Cäcilienhof Bahrke Pflegeheim Betriebsgesellschaft mbH',
+    location: 'Harsum',
     type: 'Vollzeit',
     category: 'Altenpfleger/in',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-19'
+    datePosted: '2026-03-25'
   },
   {
     id: '25',
     title: 'Pflegefachkraft (m/w/d)',
-    employer: 'workconcept service GmbH Arbeitnehmerüberlassung',
-    location: 'Föritztal',
+    employer: 'ASB gemeinn.Seniorenhilfe GmbH',
+    location: 'Bad Klosterlausnitz',
     type: 'Vollzeit',
     category: 'Altenpfleger/in',
     description: 'Pflegefachkraft (m/w/d)',
     tags: ['Altenpfleger/in'],
-    datePosted: '2026-03-19'
+    datePosted: '2026-03-25'
   }
 ];
 
